@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"  > 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Taxiing</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app.css">
+   <script src="public/bower_components/angular/angular.js"></script>
+</head>
+<body ng-app="myApp">
+
+  <ul class="menu">
+    <img class="taxipic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTelegoBGUAgE0IZXZvT07t-ButMWHWGSZ8RpkgGaDbkJV2r_6q" alt="">
+    <li><a ui-sref="home">Home</a></li>
+    <li><a ui-sref="login">Log In</a></li>
+    <li ng-show="loggedin">Map <a ui-sref="map">map</a></li>
+  </ul>
+  <div id="main">
+
+  <h1>Taxiing</h1>
+</div>
+  <div ui-view></div>
+
+<script src="public/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="public/bower_components/firebase/firebase.js"></script>
+<script src="public/bower_components/angularfire/dist/angularfire.min.js"></script>
+<script src="public/module.js"></script>
+<script src="home/home.js"></script>
+<script src="login/login.js"></script>
+<script src="maps/map.js"></script>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
